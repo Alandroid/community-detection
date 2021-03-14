@@ -7,7 +7,7 @@ The code and files here contained are part of an undergraduate research project 
 
 ## Folders structure:
 
-The program here contained applies three famous clustering algorithms to some real networks, obtained from the website in the references [[1]](#1):
+The `clustering_benchmark.py` python script applies three famous clustering algorithms to some real networks, obtained from the website in the references [[1]](#1):
 
 In the 'presentations' folder, I included miscellaneous presentations and pdfs produced by me during the course of the research project.
 
