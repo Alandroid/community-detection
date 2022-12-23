@@ -135,16 +135,13 @@ def plot_netx(g, part, outfile):
 
 
 def main():
+      
+    infile = r'data/IMDB_network.txt'  # Linux path
 
-    infile= r'data/Karate_network.txt'                # Linux paths
-    #infile = r'data/Drosofila_network.txt'        
-    #infile = r'data/IMDB_network.txt'
-    #infile = r'data/Celegans_network.txt'
-
-    outfile1 = "Louvain_Igraph_imdb.png"
-    outfile2 = "Leiden_Igraph_imdb.png"
-    outfile3 = "Louvain_Netx_imdb.png"
-    outfile4 = "Newman_Netx_imdb.png"
+    outfile1 = "Louvain_Igraph_IMDB_network.png"
+    outfile2 = "Leiden_Igraph_IMDB_network.png"
+    outfile3 = "Louvain_Netx_IMDB_network.png"
+    outfile4 = "Newman_Netx_IMDB_network.png"
 
     g1 = read_igraph(infile).simplify(combine_edges={ "width": "sum" })
     g2 = read_netx(infile)
